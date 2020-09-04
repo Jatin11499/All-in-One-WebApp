@@ -1,0 +1,168 @@
+<%- include("partials/header") -%>
+
+<div class="container-fluid home-main">
+    <div class="row">
+        <div class="col-md-3 facts">
+            <div class="heading">
+                <center><h3>Random Facts:</h3></center>
+            </div>
+            <div class="news">
+                <% for(let i=0;i<10;i++){ %>
+                    <div class="card news-card">
+                        <div class="card-body">
+                            <p><%= randomFacts[i].fact %></p>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+
+        <div class="col-md-6 info">
+            <div class="col-md-12">
+                <center>
+                    <h1 class="welcome">Welcome!<br><%= name %></h1>
+                </center>
+            </div>
+            <div class="date-n-time col-md-12">
+                <h1 class="time">Time</h1>
+                <h1 class="date">Date</h1>
+            </div>
+            <div class="weather col-md-12">
+                <div><img src="" alt="Icon" height="60" width="60" class="weatherIcon"></div>
+                <div><h3 class="desc"></h3></div>
+                <div><h3 class="temp"></h3></div>
+            </div>
+        </div>
+
+        <div class="col-md-3 apps">
+            <div class="menu-btn">
+                <a class="btn btn-dark dark-mode">Dark Mode <i class="fa fa-moon-o" aria-hidden="true"></i></a>
+                <a href="/about" class="btn btn-dark">About Us</a>
+                <a href="/logout" class="btn btn-dark">Logout</a>
+            </div>
+
+            <div class="apps-section">
+                <div class="heading">
+                    <center><h3>Your Apps:</h3></center>
+                </div>
+                <center>
+                <a class="btn" href="https://www.google.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/281/281764.svg" alt="google" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.facebook.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/174/174848.svg" alt="fb" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.instagram.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/2111/2111463.svg" alt="insta" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.gmail.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/2991/2991144.svg" alt="gmail" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.youtube.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/174/174883.svg" alt="yt" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.whatsapp.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/733/733585.svg" alt="wats" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.twitter.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/145/145812.svg" alt="twi" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.pinterest.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/145/145808.svg" alt="pin" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.linkedin.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="link" height="50" width="50">
+                </a>
+                <a class="btn" href="https://play.google.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/1532/1532534.svg" alt="play" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.dropbox.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/185/185969.svg" alt="drop" height="50" width="50">
+                </a>
+                <a class="btn" href="https://drive.google.com" target="_blank">
+                    <img src="https://image.flaticon.com/icons/svg/2111/2111436.svg" alt="drive" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.facebook.com/messenger/" target="_blank">
+                    <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-04-512.png" alt="msg" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.amazon.com" target="_blank">
+                    <img src="https://cdn2.iconfinder.com/data/icons/social-icons-color/512/amazon-512.png" alt="amazon" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.flipkart.com" target="_blank">
+                    <img src="https://cdn2.iconfinder.com/data/icons/social-icons-color/512/flipkart-512.png" alt="flip" height="50" width="50">
+                </a>
+                <a class="btn" href="https://www.netflix.com" target="_blank">
+                    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-512.png" alt="netflix" height="50" width="50">
+                </a>
+                <a class="btn" href="https://meet.google.com/" target="_blank">
+                    <img src="https://lh3.googleusercontent.com/dNVT9ozasUGWx5L62LYd9qPUkx0PbrjbPZW7nrNbzV96l5n6eJnw_ygT8Mp91PWUEWlB=s180-rw" alt="meet" height="50" width="50">
+                </a>
+                <a class="btn" href="https://zoom.us/" target="_blank">
+                    <img src="https://lh3.googleusercontent.com/1DqxbUca62LmV1ehZirHGWYBef9Jrtl3DhZ4m6YBnWCUX-XNr3lcnYKb31R-7ukpKAw=s180-rw" alt="zoom" height="50" width="50">
+                </a>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 todo-section">
+            <div class="heading">
+                <center><h3>To-Do List:</h3></center>
+            </div>
+            <div class="box">
+                <% todo.forEach(function(item){ %>
+                <form action="/delete" method="POST">
+                    <div class="item">
+                        <input type="hidden" name="name" value="<%= name %>">
+                        <input type="checkbox" name="checkbox" onchange="this.form.submit()" value="<%= item._id %>">
+                        <p class="p-item"><%= item.name %></p>
+                    </div>
+                </form>
+                <% }) %>
+                <form class="item" action="/add-new" method="POST">
+                    <input type="text" name="newItem" placeholder="New Item" autocomplete="off" class="addItem">
+                    <input type="hidden" name="name" value="<%= name %>">
+                    <button type="submit" name="list" class="addItemBtn">+</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-6 news-section">
+            <div class="heading">
+                <center><h3>News Section:</h3></center>
+            </div>
+            <div class="news">
+                <% for(let i=0;i<10;i++){ %>
+                    <div class="card news-card">
+                        <div class="card-body">
+                            <h4 class="card-title"><%= newsTitles[i] %></h4>
+                            <p><%= newsContent[i] %></p>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+
+        <div class="col-md-3 calendar-section">
+            <center>
+                <div class="calendar"></div>
+            </center>
+
+            <div class="memoSection">
+                <div class="heading">
+                    <center><h3>Memo:</h3></center>
+                </div>
+                <center>
+                    <form class="memo" action="/memoSubmit" method="POST">
+                        <input type="text" name="memoTitle" placeholder="Title" class="mt" value="<%= mt %>">
+                        <textarea type="text" name="memoBody" class="mb" cols="25" rows="5" placeholder="Press enter in title to save."><%= mb %></textarea>
+                        <input type="hidden" name="name" value="<%= name %>">
+                    </form>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") -%>
